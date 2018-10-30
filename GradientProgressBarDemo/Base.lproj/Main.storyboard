@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GradientProgressBarDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="34q-Gt-i3U" customClass="GradientProgressBar" customModule="GradientProgressBarDemo" customModuleProvider="target">
+                                <rect key="frame" x="16" y="36" width="343" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" placeholder="YES" id="2YX-LL-9mw"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OzU-HH-lYh">
+                                <rect key="frame" x="147" y="102" width="81" height="30"/>
+                                <state key="normal" title="Inactive Bar"/>
+                                <connections>
+                                    <action selector="inactiveAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0RL-O2-jKD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EQt-ul-2RX">
+                                <rect key="frame" x="152.5" y="148" width="70" height="30"/>
+                                <state key="normal" title="Active Bar"/>
+                                <connections>
+                                    <action selector="activeAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5MC-SS-Stj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hcN-py-NPf">
+                                <rect key="frame" x="144" y="194" width="87" height="30"/>
+                                <state key="normal" title="Activate first"/>
+                                <connections>
+                                    <action selector="activateFirstAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="syY-cW-iyF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ial-Fg-HXi">
+                                <rect key="frame" x="131.5" y="240" width="112" height="30"/>
+                                <state key="normal" title="Activate Second"/>
+                                <connections>
+                                    <action selector="activateSecondAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4cY-ej-daf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HHe-Rs-ghB">
+                                <rect key="frame" x="162" y="286" width="51" height="30"/>
+                                <state key="normal" title="5 steps"/>
+                                <connections>
+                                    <action selector="fiveStepsAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sLz-ju-8Gi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jcy-H4-14A">
+                                <rect key="frame" x="144.5" y="332" width="86" height="30"/>
+                                <state key="normal" title="Larger steps"/>
+                                <connections>
+                                    <action selector="largerStepsAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5ft-EP-Dza"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NnO-3I-hbE">
+                                <rect key="frame" x="143.5" y="378" width="88" height="30"/>
+                                <state key="normal" title="Remove Text"/>
+                                <connections>
+                                    <action selector="largerStepsAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hEe-Y7-RBm"/>
+                                    <action selector="removeTextAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UGU-xy-On0"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="HHe-Rs-ghB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1xi-Vl-f3B"/>
+                            <constraint firstItem="Jcy-H4-14A" firstAttribute="top" secondItem="HHe-Rs-ghB" secondAttribute="bottom" constant="16" id="5I6-Hc-9FQ"/>
+                            <constraint firstItem="NnO-3I-hbE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JmB-nK-d3X"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="34q-Gt-i3U" secondAttribute="trailing" constant="16" id="MAd-nb-JUR"/>
+                            <constraint firstItem="34q-Gt-i3U" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="NsG-dc-bC7"/>
+                            <constraint firstItem="34q-Gt-i3U" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Oao-M8-i3T"/>
+                            <constraint firstItem="EQt-ul-2RX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Yet-Zj-eL5"/>
+                            <constraint firstItem="Jcy-H4-14A" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gvc-92-Ygi"/>
+                            <constraint firstItem="hcN-py-NPf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rpv-lZ-bVc"/>
+                            <constraint firstItem="EQt-ul-2RX" firstAttribute="top" secondItem="OzU-HH-lYh" secondAttribute="bottom" constant="16" id="sjw-aC-OKF"/>
+                            <constraint firstItem="ial-Fg-HXi" firstAttribute="top" secondItem="hcN-py-NPf" secondAttribute="bottom" constant="16" id="snm-0O-3V2"/>
+                            <constraint firstItem="OzU-HH-lYh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tKb-wq-8ro"/>
+                            <constraint firstItem="ial-Fg-HXi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tRp-ol-ae5"/>
+                            <constraint firstItem="NnO-3I-hbE" firstAttribute="top" secondItem="Jcy-H4-14A" secondAttribute="bottom" constant="16" id="uNS-Ln-Mky"/>
+                            <constraint firstItem="HHe-Rs-ghB" firstAttribute="top" secondItem="ial-Fg-HXi" secondAttribute="bottom" constant="16" id="vbS-GN-tvz"/>
+                            <constraint firstItem="OzU-HH-lYh" firstAttribute="top" secondItem="34q-Gt-i3U" secondAttribute="bottom" constant="16" id="wDC-eH-QKf"/>
+                            <constraint firstItem="hcN-py-NPf" firstAttribute="top" secondItem="EQt-ul-2RX" secondAttribute="bottom" constant="16" id="weD-E0-r4b"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="progressBar" destination="34q-Gt-i3U" id="roy-zn-TI7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
