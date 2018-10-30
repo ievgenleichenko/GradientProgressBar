@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
-s.name         = "GradientProgressBar"
-s.version      = "1.0.0"
+s.name         = "YLGradientProgressBar"
+s.version      = "1.0.1"
 s.summary      = "Progress bar that displays active steps with gradient."
 s.homepage     = "https://github.com/Twas/GradientProgressBar"
 s.license      = { :type => "MIT", :file => "LICENSE" }
