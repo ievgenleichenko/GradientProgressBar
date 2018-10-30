@@ -9,7 +9,7 @@
 import UIKit
 import CoreGraphics
 
-class GradientProgressBar: UIView {
+public class GradientProgressBar: UIView {
     
     // Color used to fill inactive steps of the progress bar
     @IBInspectable var emptyProgressColor: UIColor = .gray {
@@ -45,7 +45,7 @@ class GradientProgressBar: UIView {
     
     // MARK: - Lifecycle -
     
-    override func layoutSubviews() {
+    override public func layoutSubviews() {
         super.layoutSubviews()
         
         progressPoints = updatedPointsForDrawing(from: progressPoints)
@@ -60,7 +60,7 @@ class GradientProgressBar: UIView {
         setNeedsDisplay()
     }
 
-    override func draw(_ rect: CGRect) {
+    override public func draw(_ rect: CGRect) {
         guard let context = UIGraphicsGetCurrentContext() else { return }
         
         clear(context: context, in: rect)
@@ -164,7 +164,7 @@ class GradientProgressBar: UIView {
 
 // MARK: - Public -
 
-extension GradientProgressBar {
+public extension GradientProgressBar {
     
     public func set(steps: [ProgressStep]) {
         progressPoints = steps.map({ ProgressBarPoint(step: $0) })
