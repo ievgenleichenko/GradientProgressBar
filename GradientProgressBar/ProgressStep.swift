@@ -11,11 +11,11 @@ import UIKit
 
 public struct ProgressStep {
     
-    private(set) var color: UIColor
-    private(set) var name: String
-    private(set) var isActive: Bool
+    public private(set) var color: UIColor
+    public private(set) var name: String
+    public private(set) var isActive: Bool
     
-    init(color: UIColor, name: String, isActive: Bool = false) {
+    public init(color: UIColor, name: String, isActive: Bool = false) {
         self.color = color
         self.name = name
         self.isActive = isActive
