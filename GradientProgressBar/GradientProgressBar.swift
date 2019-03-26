@@ -166,7 +166,7 @@ public class GradientProgressBar: UIView {
 
 public extension GradientProgressBar {
     
-    public func set(steps: [ProgressStep]) {
+    func set(steps: [ProgressStep]) {
         progressPoints = steps.map({ ProgressBarPoint(step: $0) })
         setNeedsLayout()
     }
